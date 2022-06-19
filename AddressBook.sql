@@ -26,3 +26,6 @@ INSERT INTO AddressBook VALUES ('Ramya','Dhurai','NO 4, Pamya Address','Bangalor
 
 --UC-4
 UPDATE AddressBook SET ADDRESS = 'UPDATED ADDRESS' WHERE FIRST_NAME = 'NANTHAGOPAL'
+
+--UC-5
+DELETE FROM AddressBook WHERE FIRST_NAME = 'Priya'
