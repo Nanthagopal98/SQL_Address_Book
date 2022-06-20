@@ -23,6 +23,8 @@ INSERT INTO AddressBook VALUES('NANTHAGOPAL','SHANMUGAM','NO 1 - COIMBATORE','CO
 INSERT INTO AddressBook VALUES ('Ela','Appu','NO 2, Ela Address','Salem','Tamilnadu',654512,9856231478,'ela@gmail.com')
 INSERT INTO AddressBook VALUES ('Priya','Reddy','NO 3, Priya Address','Palakkad','Kerala',565626,9523648952,'priya@gmail.com')
 INSERT INTO AddressBook VALUES ('Ramya','Dhurai','NO 4, Pamya Address','Bangalore','Karnataka',564423,7842338370,'ramya@gmail.com')
+INSERT INTO AddressBook VALUES ('Ravi','SHAN','NO 5, Ravi Address','COIMBATORE','TAMILNADU',658696,8855226699,'ravi@gmail.com')
+INSERT INTO AddressBook VALUES ('Senthil','Dhurai','NO 4, Pamya Address','COIMBATORE','TAMILNADU',632145,9988332259,'senthil@gmail.com')
 
 --UC-4
 UPDATE AddressBook SET ADDRESS = 'UPDATED ADDRESS' WHERE FIRST_NAME = 'NANTHAGOPAL'
@@ -40,4 +42,5 @@ SELECT STATE, COUNT(STATE) AS TOTAL_STATE_COUNT FROM AddressBook GROUP BY STATE
 
 
 --UC-8
-SELECT * FROM AddressBook ORDER BY FIRST_NAME ASC
+SELECT * FROM AddressBook WHERE CITY = 'COIMBATORE' ORDER BY FIRST_NAME ASC
+
